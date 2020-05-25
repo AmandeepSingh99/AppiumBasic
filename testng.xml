@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="2">
+	<listeners>
+	<!-- passing listner class pasth here -->
+		<listener class-name="D:\Download New Things from Browser\original (4)\AppiumFramework\src\main\java\practise\AppiumFramework\Listeners.java"/>
+	</listeners>
+  <test thread-count="5" name="Test">
+  	<parameter name="URL" value="http://www.flipkart.com"/>
+  		<parameter name="APIKey/username" value="1234567"/>
+		    <classes>
+		      <class name="practise.AppiumFramework.testNGdemo"/>
+		    </classes>
+  </test> <!-- Test -->
+  <test name="smoke">
+  	<classes>
+  		<class name="practise.AppiumFramework.testNGdemo2">
+  			<methods>
+  				<exclude name="demo.*"/>
+  			</methods>
+  		</class>
+  	</classes>
+  </test>
+</suite> <!-- Suite -->
