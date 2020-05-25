@@ -26,6 +26,8 @@ public class basics extends base1{
 		//driver.findElementByClassName("android.widget.Button").get(1).click();
 		//driver.findElementByAndroidUIAutomator("(attribute("value")");
 		
+		
+	//hhh
 		//validate the clickable feature for all options
 		System.out.println(driver.findElementsByAndroidUIAutomator("new UiSelector().clickable(true)").size());
 	}
